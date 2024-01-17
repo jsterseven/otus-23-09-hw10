@@ -50,8 +50,8 @@ jobs:
       uses: actions/upload-artifact@v3
       with: 
         name: report
-        if-no-files-found: error
-        path: ./jest-html-report/
+        if-no-files-found: warn
+        path: ./jest-html-report
 
     # - name: Run tests coverage
     #   run: npm run test:coverage
