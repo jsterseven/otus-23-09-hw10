@@ -26,7 +26,6 @@ const book = {
     },
 
     async getBook(credential, isbn) {
-        console.log(credential.token);
         return await supertest(baseUrl)
             .get(`/BookStore/v1/Book?ISBN=${isbn}`)
             .set('Accept', 'application/json')
