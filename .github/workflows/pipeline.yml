@@ -69,7 +69,7 @@ jobs:
       with:
         to: ${{ secrets.GROUP_ID }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        # photo: ./test.png
+        photo: ./test.png
         message: |
           ${{ github.actor }} created commit:
           Commit message: ${{ github.event.commits[0].message }}
